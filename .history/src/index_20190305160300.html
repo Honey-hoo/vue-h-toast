@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>roast 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script  type="text/javascript" src="../node_modules/vue/dist/vue.js"></script>
+    <script  type="text/javascript" src="../dist/vue-toast.js"></script>
+</head>
+<body>
+<div id="app">
+    <a href="javascript:;" @click="toast">点击弹出toast</a>
+</div>
+<script type="text/javascript">
+    var app=new Vue({
+        el: '#app',
+        methods:{
+            toast:function(){
+                this.$toast.show("你好，yoyo")
+            }
+        }
+    })
+</script>
+</body>
+</html>！
